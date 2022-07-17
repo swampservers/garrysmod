@@ -723,3 +723,17 @@ function table.GetKeys( tab )
 	return keys
 
 end
+
+function table.GetValues( tab )
+
+	local values = {}
+	local id = 1
+
+	for k, v in pairs( tab ) do
+		values[ id ] = v
+		id = id + 1
+	end
+
+	return values
+
+end
